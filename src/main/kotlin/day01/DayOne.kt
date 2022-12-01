@@ -22,6 +22,24 @@ fun a() {
 }
 
 fun b() {
-  println("running 1b...")
+  val fileList = File("puzzle_input\\day01.txt").useLines { it.toList() }
+
+  var mostCalories = mutableListOf<Int>(0, 0, 0)
+  var calories = 0
+
+  for (line in fileList) {
+    if (line == "") {
+      calories = 0
+    } else {
+      calories += line.toInt()
+    }
+
+    if (calories > mostCalories[0]) {
+      mostCalories[0] = calories
+      mostCalories.sort()
+    }
+  }
+
+  println(mostCalories.sum())
 }
 

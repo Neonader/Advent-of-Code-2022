@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4edf0b47-cf99-4161-8adc-779e08ce7ab9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/puzzle_input/day01.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/day01/DayOne.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day01/DayOne.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
