@@ -2,9 +2,9 @@ package day01
 
 import java.io.File
 
-fun a() {
-  val fileList = File("puzzle_input\\day01.txt").useLines { it.toList() }
+val fileList = File("puzzle_input\\day01.txt").useLines { it.toList() }
 
+fun a():Int {
   var mostCalories = 0
   var calories = 0
 
@@ -18,13 +18,11 @@ fun a() {
     if (calories > mostCalories) mostCalories = calories
   }
 
-  println(mostCalories)
+  return mostCalories
 }
 
-fun b() {
-  val fileList = File("puzzle_input\\day01.txt").useLines { it.toList() }
-
-  var mostCalories = mutableListOf<Int>(0, 0, 0)
+fun b(): Int {
+  var mostCalories = mutableListOf(0, 0, 0)
   var calories = 0
 
   for (line in fileList) {
@@ -40,6 +38,6 @@ fun b() {
     }
   }
 
-  println(mostCalories.sum())
+  return mostCalories.sum()
 }
 
