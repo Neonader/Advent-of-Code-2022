@@ -1,7 +1,6 @@
 package day02
 
 import java.io.File
-import kotlin.system.exitProcess
 
 val fileList = File("puzzle_input\\day02.txt").useLines { it.toList() }
 
