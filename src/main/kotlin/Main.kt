@@ -4,6 +4,8 @@ fun main(args: Array<String>) {
   val result = when (readln()) {
     "1a" -> day01.a()
     "1b" -> day01.b()
+    "2a" -> day02.a()
+    "2b" -> day02.b()
     else -> -1
   }
 
