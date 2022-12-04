@@ -2,7 +2,7 @@ package day03
 
 import java.io.File
 
-val fileList = File("puzzle_input\\day03.txt").useLines { it.toList() }
+val fileList = File("puzzle_input/day03.txt").useLines { it.toList() }
 val priorityLookup = (CharRange('a', 'z') + CharRange('A', 'Z')).toList()
 
 fun a(): Int {

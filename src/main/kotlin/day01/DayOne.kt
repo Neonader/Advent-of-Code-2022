@@ -2,7 +2,7 @@ package day01
 
 import java.io.File
 
-val fileList = File("puzzle_input\\day01.txt").useLines { it.toList() }
+val fileList = File("puzzle_input/day01.txt").useLines { it.toList() }
 
 fun a(): Int {
   var mostCalories = 0
