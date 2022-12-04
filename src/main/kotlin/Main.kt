@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
   print("Which day would you like to run? > ")
 
   val result = when (readln()) {
@@ -6,8 +6,10 @@ fun main(args: Array<String>) {
     "1b" -> day01.b()
     "2a" -> day02.a()
     "2b" -> day02.b()
+    "3a" -> day03.a()
+    "3b" -> day03.b()
     else -> -1
   }
 
-  println("The result is $result.")
+  println("\nThe result is $result.")
 }
