@@ -28,5 +28,20 @@ fun a(): Int {
 }
 
 fun b(): Int {
-  return -1
+  if (fileList.size % 3 != 0) return -1
+
+  var sum = 0
+
+  val groups = fileList.chunked(3)
+
+  for (group in groups) {
+    for (item in group[0]) {
+      if (item in group[1] && item in group[2]) {
+        sum += priorityLookup.indexOf(item) + 1
+        break
+      }
+    }
+  }
+
+  return sum
 }
