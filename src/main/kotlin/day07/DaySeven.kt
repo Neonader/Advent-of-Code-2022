@@ -55,5 +55,21 @@ fun a(): Int {
 fun b(): Int {
   common()
 
-  return -1
+  var usedSpace = 0
+  for (directory in fileSystem) usedSpace += directory.value
+  val availableSpace = 70_000_000 - usedSpace
+  val necessarySpace = 30_000_000 - availableSpace
+
+  var optimalDirectorySize = 70_000_000
+
+  for (directory in fileSystem) {
+    var totalValue = directory.value
+    for (child in fileSystem)
+      if (child != directory && child.key.startsWith(directory.key))
+        totalValue += child.value
+    if (totalValue in necessarySpace until optimalDirectorySize)
+      optimalDirectorySize = totalValue
+  }
+
+  return optimalDirectorySize
 }
