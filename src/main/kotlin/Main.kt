@@ -16,6 +16,8 @@ fun main() {
     "6b" -> day06.b()
     "7a" -> day07.a()
     "7b" -> day07.b()
+    "8a" -> day08.a()
+    "8b" -> day08.b()
     else -> -1
   }
 

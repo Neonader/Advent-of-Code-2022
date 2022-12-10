@@ -7,3 +7,4 @@ My (the best) solutions to AOC2022, written in Kotlin.
 * [Day Five](src/main/kotlin/day05/DayFive.kt)
 * [Day Six](src/main/kotlin/day06/DaySix.kt)
 * [Day Seven](src/main/kotlin/day07/DaySeven.kt)
+* [Day Eight](src/main/kotlin/day08/DayEight.kt)
