@@ -1,5 +1,5 @@
 # Advent-of-Code-2022
-My (the best) solutions to AOC2022, written in Kotlin.
+My (the best) solutions to AoC-2022, written in Kotlin.
 * [Day One](src/main/kotlin/day01/DayOne.kt)
 * [Day Two](src/main/kotlin/day02/DayTwo.kt)
 * [Day Three](src/main/kotlin/day03/DayThree.kt)
@@ -8,3 +8,4 @@ My (the best) solutions to AOC2022, written in Kotlin.
 * [Day Six](src/main/kotlin/day06/DaySix.kt)
 * [Day Seven](src/main/kotlin/day07/DaySeven.kt)
 * [Day Eight](src/main/kotlin/day08/DayEight.kt)
+* [Day Nine](src/main/kotlin/day09/DayNine.kt)
