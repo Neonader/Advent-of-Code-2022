@@ -23,6 +23,8 @@ fun main() {
       "9b"  -> day09.b()
       "10a" -> day10.a()
       "10b" -> day10.b()
+      "11a" -> day11.a()
+      "11b" -> day11.b()
       else -> -1
     }
   }.")
