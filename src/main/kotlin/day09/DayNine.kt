@@ -4,7 +4,7 @@ import java.io.File
 
 data class Knot(var x: Int, var y: Int)
 
-val fileList =  File("puzzle_input/day09.txt").readLines()
+val fileList = File("puzzle_input/day09.txt").readLines()
 
 fun moveHead(head: Knot, direction: Char) = when (direction) {
     'U'  -> Knot(head.x, head.y + 1)
@@ -27,7 +27,7 @@ fun moveTail(head: Knot, tail: Knot) = when {
 }
 
 fun a(): Int {
-  var visited = mutableSetOf(Knot(0, 0))
+  val visited = mutableSetOf(Knot(0, 0))
 
   var head = Knot(0, 0)
   var tail = Knot(0, 0)
@@ -47,9 +47,9 @@ fun a(): Int {
 }
 
 fun b(): Int {
-  var visited = mutableSetOf(Knot(0, 0))
+  val visited = mutableSetOf(Knot(0, 0))
 
-  var rope = Array(10) { Knot(0,0) }
+  val rope = Array(10) { Knot(0,0) }
 
   for (line in fileList) {
     val direction = line[0]

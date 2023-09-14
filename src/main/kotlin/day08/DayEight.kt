@@ -2,7 +2,7 @@ package day08
 
 import java.io.File
 
-val fileList =  File("puzzle_input/day08.txt").useLines { it.toList() }
+val fileList = File("puzzle_input/day08.txt").useLines { it.toList() }
 val forest = fileList.map { row -> row.toList().map { col -> col.code } }
 val width = forest[0].size
 val height = forest.size

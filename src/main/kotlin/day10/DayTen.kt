@@ -2,7 +2,7 @@ package day10
 
 import java.io.File
 
-val fileList =  File("puzzle_input/day10.txt").readLines()
+val fileList = File("puzzle_input/day10.txt").readLines()
 var registerX = 1
 
 fun a(): Int {

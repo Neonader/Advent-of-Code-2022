@@ -2,7 +2,7 @@ package day11
 
 import java.io.File
 
-val fileList =  File("puzzle_input/day11.txt").readLines()
+val fileList = File("puzzle_input/day11.txt").readLines()
 
 class Monkey(
   val inventory: MutableList<Long>,
@@ -85,6 +85,7 @@ fun common() {
 
     modulus *= divisor
 
+    @Suppress("UNCHECKED_CAST")
     monkeys += Monkey(
       inventory as MutableList<Long>,
       operation,

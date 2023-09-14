@@ -11,3 +11,4 @@ My (the best) solutions to AoC-2022, written in Kotlin.
 * [Day Nine](src/main/kotlin/day09/DayNine.kt)
 * [Day Ten](src/main/kotlin/day10/DayTen.kt)
 * [Day Eleven](src/main/kotlin/day11/DayEleven.kt)
+* [Day Twelve](src/main/kotlin/day12/DayTwelve.kt)
